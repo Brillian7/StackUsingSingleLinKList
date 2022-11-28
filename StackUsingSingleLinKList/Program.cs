@@ -57,9 +57,6 @@ namespace StackUsingSingleLinKList
                 }
             }
         }
-    }
-    class Program
-    {
         static void Main(string[] args)
         {
             stack s = new stack();
@@ -73,7 +70,7 @@ namespace StackUsingSingleLinKList
                 Console.WriteLine("4. Exit ");
                 Console.Write("\nEnter your choice: ");
                 string input = Console.ReadLine();
-                char ch = Convert.ToChar(input == "" ? "0":input);
+                char ch = Convert.ToChar(input == "" ? "0" : input);
                 switch (ch)
                 {
                     case '1':
@@ -81,9 +78,22 @@ namespace StackUsingSingleLinKList
                         int num = Convert.ToInt32(Console.ReadLine());
                         s.push(num);
                         break;
+                    case '2':
+                        if (s.empty())
+                        {
+                            Console.WriteLine("\nSTack empty");
+                            break;
+                        }
+                        s.pop();
+                        break;
+                    
 
                 }
             }
         }
+
     }
 }
+  
+
+     
