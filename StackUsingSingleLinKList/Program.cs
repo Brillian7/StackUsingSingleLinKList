@@ -32,7 +32,8 @@ namespace StackUsingSingleLinKList
         }
         public void push(int element)
         {
-            
+            node fresh;
+            fresh = new node(element, null);
         }
     }
     internal class Program
